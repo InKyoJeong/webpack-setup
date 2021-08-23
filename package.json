@@ -1,0 +1,32 @@
+{
+  "name": "webpack-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InKyoJeong/webpack-setup.git"
+  },
+  "author": "Inkyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InKyoJeong/webpack-setup/issues"
+  },
+  "homepage": "https://github.com/InKyoJeong/webpack-setup#readme",
+  "dependencies": {
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "prettier": "^2.3.2"
+  }
+}
