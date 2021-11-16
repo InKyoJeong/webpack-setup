@@ -12,7 +12,7 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 const config: Configuration = {
-  name: "react-ts-webpack",
+  name: "mysetup",
   mode: isDevelopment ? "development" : "production",
   devtool: isDevelopment ? "hidden-source-map" : "inline-source-map",
   resolve: {
@@ -77,9 +77,10 @@ const config: Configuration = {
     publicPath: "/dist/",
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: true, // react router
     port: 3090,
-    publicPath: "/dist/",
+    devMiddleware: { publicPath: "/dist/" },
+    static: { directory: path.resolve(__dirname) },
   },
 };
 
