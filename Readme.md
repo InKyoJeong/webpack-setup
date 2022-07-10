@@ -1,1 +1,1 @@
-- React + Typescript
+- My webpack setup
