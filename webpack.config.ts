@@ -34,14 +34,15 @@ const config: webpack.Configuration = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            '@babel/preset-env',
-            ['@babel/preset-react', { runtime: 'automatic' }],
-            '@babel/preset-typescript',
-          ],
-        },
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react'],
+            },
+          },
+          'ts-loader',
+        ],
         exclude: path.join(__dirname, 'node_modules'),
       },
       {
